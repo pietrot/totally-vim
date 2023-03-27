@@ -16,3 +16,10 @@ set foldcolumn=0
 
 ## COPY/PASTE
 - `gv` recover previous selection
+
+## GIT
+#### GIT CHECKOUT
+https://git-scm.com/docs/git-checkout
+```
+git checkout [--theirs | --ours] file
+```
