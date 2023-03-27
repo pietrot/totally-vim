@@ -17,9 +17,17 @@ set foldcolumn=0
 ## COPY/PASTE
 - `gv` recover previous selection
 
-## GIT
-#### GIT CHECKOUT
-https://git-scm.com/docs/git-checkout
+## GIT (VIM FUGITIVE)
+#### Conflict resolution configuration
+--Credit to https://medium.com/prodopsio/solving-git-merge-conflicts-with-vim-c8a8617e3633
 ```
-git checkout [--theirs | --ours] file
+nnoremap <leader>g :G<CR>
+nnoremap <leader>gd :Gvdiff!<CR>
+nnoremap <leader>gdh :diffget //2<CR>
+nnoremap <leader>gdl :diffget //3<CR>
+nnoremap <leader>ga :Gwrite<CR>
+```
+#### Checkout
+```
+:Git checkout [--theirs | --ours] file # https://git-scm.com/docs/git-checkout
 ```
