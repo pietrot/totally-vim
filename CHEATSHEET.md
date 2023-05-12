@@ -22,8 +22,10 @@ set foldcolumn=0
 If you want to perform a search/replace across you project tree, you can use vim's argument list.
 ```
 :args **/*.{file_ext}
-:argdo %s/{search}/{replace}/g | update
+:argdo %s/{search}/{replace}/g | update #:update is used because it will only save the file if it has changed.
 ```
+_Note: `:update` is used to save the file after it has changed._
+
 You can even use the shell's find command to get a list of all files in the current directory by running:
 ```
 :args `find . -type f`
