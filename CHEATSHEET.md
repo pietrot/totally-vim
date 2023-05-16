@@ -1,5 +1,5 @@
 ## FOLDING
-#### CONFIGURATION
+### Configuration
 ```
 " Folding options
 set foldenable
@@ -7,7 +7,7 @@ set foldmethod=syntax
 set foldlevel=999
 set foldcolumn=0
 ```
-#### HOTKEYS
+### Hotkeys
 - `zo` opens a fold at the cursor
 - `zO` opens all folds at the cursor
 - `zc` close one fold under the cursor
@@ -18,24 +18,26 @@ set foldcolumn=0
 - `gv` recover previous selection
 
 ## SEARCH/REPLACE
-#### Across folders & subfolders
+### Across folders & subfolders
 If you want to perform a search/replace across you project tree, you can use vim's argument list.
 ```
 :args **/*.{file_ext}
-:argdo %s/{search}/{replace}/g | update #:update is used because it will only save the file if it has changed.
+:silent! argdo %s/{search}/{replace}/g | update #:update is used because it will only save the file if it has changed.
 ```
-_Note: `:update` is used to save the file after it has changed._
-
-You can even use the shell's find command to get a list of all files in the current directory by running:
-```
-:args `find . -type f`
-```
-You can view the current args list by running `:args` by itself. If you want to add or delete files from the list, you can use the `:argadd` or the `:argdelete` commands respectively.
+#### Notes:
+- `:update` is used to save the file after it has changed
+- `silent` skips displaying normal messages
+- `!` skips displaying error messages
+- you can use the shell's find command to get a list of all files in the current directory by running:
+  ```
+  :args `find . -type f`
+  ```
+- you can view the current args list by running `:args` by itself. If you want to add or delete files from the list, you can use the `:argadd` or the `:argdelete` commands respectively.
 
 —_Credit to https://vi.stackexchange.com/a/2777_
 
 ## GIT (VIM FUGITIVE)
-#### Conflict resolution configuration
+### Conflict resolution configuration
 --Credit to https://medium.com/prodopsio/solving-git-merge-conflicts-with-vim-c8a8617e3633
 ```
 nnoremap <leader>g :G<CR>
@@ -44,7 +46,7 @@ nnoremap <leader>gdh :diffget //2<CR>
 nnoremap <leader>gdl :diffget //3<CR>
 nnoremap <leader>ga :Gwrite<CR>
 ```
-#### Checkout
+### Checkout
 ```
 :Git checkout [--theirs | --ours] file # https://git-scm.com/docs/git-checkout
 ```
