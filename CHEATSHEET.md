@@ -50,3 +50,22 @@ nnoremap <leader>ga :Gwrite<CR>
 ```
 :Git checkout [--theirs | --ours] file # https://git-scm.com/docs/git-checkout
 ```
+
+### Stashing changes
+#### Stash w/ a message
+```
+git stash push -m "my_stash_name"
+git stash apply stash^{/my_stash_name}
+```
+
+#### Stash w/o a message
+```
+git stash
+git stash apply # pop & apply latest stash
+git stash apply stash@{n} # pop nth stash and apply it
+```
+
+#### List stashes
+```
+git stash list
+```
