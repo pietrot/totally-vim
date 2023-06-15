@@ -13,6 +13,8 @@ set foldcolumn=0
 - `zc` close one fold under the cursor
 - `zC` close all folds under the cursor recursively
 - `za` toggle fold
+- `zR` opens all folds in current buffer
+- `zM` closes all folds in current buffer
 
 ## COPY/PASTE
 - `gv` recover previous selection
