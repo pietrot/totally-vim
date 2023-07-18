@@ -16,8 +16,11 @@ set foldcolumn=0
 - `zR` opens all folds in current buffer
 - `zM` closes all folds in current buffer
 
-## COPY/PASTE
+## COPY/PASTE/DELETE
 - `gv` recover previous selection
+- `dd` delete current line from cursor position
+- `dw` delete current word from cursor position
+- `x` delete current character from cursor position
 
 ## SEARCH/REPLACE
 ### Across folders & subfolders
