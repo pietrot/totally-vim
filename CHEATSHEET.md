@@ -51,6 +51,9 @@ nnoremap <leader>gdh :diffget //2<CR>
 nnoremap <leader>gdl :diffget //3<CR>
 nnoremap <leader>ga :Gwrite<CR>
 ```
+
+_Note: when viewing a vertical diff, center pane is your current workspace, the left side is HEAD and the right side is the branch you are merging._
+
 ### Checkout
 ```
 :Git checkout [--theirs | --ours] file # https://git-scm.com/docs/git-checkout
