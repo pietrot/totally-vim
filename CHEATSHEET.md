@@ -42,6 +42,10 @@ If you want to perform a search/replace across you project tree, you can use vim
 —_Credit to https://vi.stackexchange.com/a/2777_
 
 ## GIT (VIM FUGITIVE)
+```
+help fugitive
+```
+
 ### Conflict resolution configuration
 --Credit to https://medium.com/prodopsio/solving-git-merge-conflicts-with-vim-c8a8617e3633
 ```
@@ -59,21 +63,29 @@ _Note: when viewing a vertical diff, center pane is your current workspace, the 
 :Git checkout [--theirs | --ours] file # https://git-scm.com/docs/git-checkout
 ```
 
-### Stashing changes
-#### Stash w/ a message
+## Browsing
+```
+help fugitive-:Gbrowse
+```
+```
+nnoremap <leader>gb :Gbrowse!<CR>
+```
+
+## Stashing changes
+### Stash w/ a message
 ```
 git stash push -m "my_stash_name"
 git stash apply stash^{/my_stash_name}
 ```
 
-#### Stash w/o a message
+### Stash w/o a message
 ```
 git stash
 git stash apply # pop & apply latest stash
 git stash apply stash@{n} # pop nth stash and apply it
 ```
 
-#### List stashes
+### List stashes
 ```
 git stash list
 ```
