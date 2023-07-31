@@ -65,10 +65,10 @@ _Note: when viewing a vertical diff, center pane is your current workspace, the 
 
 ## Browsing
 ```
-help fugitive-:Gbrowse
+help fugitive-:GBrowse
 ```
 ```
-nnoremap <leader>gb :Gbrowse!<CR>
+nnoremap <leader>gb :GBrowse!<CR>
 ```
 
 ## Stashing changes
