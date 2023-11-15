@@ -27,7 +27,7 @@ set foldcolumn=0
 If you want to perform a search/replace across you project tree, you can use vim's argument list.
 ```
 :args **/*.{file_ext}
-:silent! argdo %s/{search}/{replace}/g | update #:update is used because it will only save the file if it has changed.
+:silent! argdo %s/{search}/{replace}/gI | update #:update is used because it will only save the file if it has changed.
 ```
 #### Notes:
 - `:update` is used to save the file after it has changed
