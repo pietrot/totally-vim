@@ -20,6 +20,7 @@ set foldcolumn=0
 - `gv` recover previous selection
 - `dd` delete current line from cursor position
 - `dw` delete current word from cursor position
+- `diw` delete current word on cursor position
 - `x` delete current character from cursor position
 
 ## SEARCH/REPLACE
